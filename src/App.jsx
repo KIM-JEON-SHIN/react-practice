@@ -1,16 +1,24 @@
+/* eslint-disable react/prop-types */
 import Card from './components/Card';
+import Layout from './components/Layout';
+import './components/layout.css';
+import Navigation from './components/Navigation';
 
 export const URL = 'https://retoolapi.dev/ptA9oC/people';
 
 function App() {
-  return (
-    <>
-      <Card />
-    </>
-  );
+  return <Layout navigation={<Navigation />} contents={<Card />} />;
 }
 
 export default App;
+/*
+props === { 
+  navigation : <Navigation />,
+  contents : <Card />
+}
+
+*/
+
 /**
  * 1. data-fetching
  * 2. promise 처리하는 방법. 2가지 정도
@@ -31,3 +39,8 @@ export default App;
  * async await
 
  */
+
+/**
+ * prop 중에 children
+ * 자식 컴포넌트
+ *   */

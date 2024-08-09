@@ -11,7 +11,6 @@ function Card() {
     const movies = await axios.get(`${URL}/movies`);
     const movieId = movies.data[0].id;
     const moviewDetail = await axios.get(`${URL}/movies/${movieId}`);
-    console.log(moviewDetail.data);
   };
 
   useEffect(() => {

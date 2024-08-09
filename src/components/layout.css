@@ -1,0 +1,13 @@
+.container {
+  margin: 40px 50px;
+}
+
+.navigation {
+  background-color: 'red';
+  height: 300px;
+}
+
+.contents {
+  background-color: 'yellow';
+  height: 700px;
+}
